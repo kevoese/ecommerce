@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	box-sizing: border-box;
+	font-family: var(--font-work-sans);
+}
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+body {
+}
+
+.link-text {
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	font-size: 14px;
+}
+
+/* .slider-menu-wrapper-container svg {
+	display: none;
+}
+
+.slider-menu-wrapper-container:hover svg {
+	display: initial;
+} */
+
+.slider-menu-container > div {
+	cursor: pointer;
+	transition: transform 0.3s ease-out;
+}
+
+.slider-menu-container > div:hover {
+	transform: scale(1.03);
+}
+
+.react-multi-carousel-list {
+	position: unset !important;
+}
+.slider .selected {
+	z-index: 0 !important;
+}
+
+.item-pay {
+	visibility: hidden;
+}
+
+.item-pay-content {
+	scale: 0.9;
+	opacity: 0;
+	transition: scale 0.3s, opacity 0.3s linear;
+}
+
+.product-card:hover .item-pay {
+	visibility: visible;
+}
+
+.product-card:hover .item-pay-content {
+	scale: 1;
+	opacity: 1;
+}
+
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button {
+	display: none;
+}
+
+.range-input input {
+	background: none;
+}
+
+.range-input input[type='range']::-webkit-slider-thumb {
+	height: 17px;
+	width: 17px;
+	border-radius: 50%;
+	background: #061a95;
+	pointer-events: auto;
+	-webkit-appearance: none;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.range-input input[type='range']::-moz-range-thumb {
+	height: 17px;
+	width: 17px;
+	border: none;
+	border-radius: 50%;
+	background: #061a95;
+	pointer-events: auto;
+	-moz-appearance: none;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.each-page a {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}

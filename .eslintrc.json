@@ -1,0 +1,45 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"extends": ["next/core-web-vitals", "airbnb-base"],
+	"rules": {
+		"no-unused-vars": "warn",
+		"no-tabs": "off",
+		"import/prefer-default-export": "off",
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "never",
+				"jsx": "never",
+				"ts": "never",
+				"tsx": "never"
+			}
+		],
+		"indent": [
+			"error",
+			2
+			// {
+			// 	"ignoredNodes": ["JSXElement"]
+			// }
+		],
+		"camelcase": "off",
+		"react/jsx-filename-extension": [
+			2,
+			{ "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+		],
+		"react/function-component-definition": [
+			"error",
+			{
+				"namedComponents": "arrow-function",
+				"unnamedComponents": "arrow-function"
+			}
+		],
+		"no-shadow": "off",
+		"radix": "off",
+		// 	"react/destructuring-assignment": "off",
+		"import/no-extraneous-dependencies": "off",
+		"no-console": "off",
+		"consistent-return": "off",
+		"no-useless-escape": "off"
+	}
+}
