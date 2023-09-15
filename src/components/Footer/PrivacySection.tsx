@@ -38,7 +38,7 @@ const PrivacySection = () => (
       ))}
     </div>
     <div className="date">
-      <span className='text-grey-ash text-2xs'>© 2023 Thrivepay. All rights reserved</span>
+      <span className='text-grey-ash text-2xs'>© 2023 BuyHere. All rights reserved</span>
     </div>
   </ContentBox>
 );

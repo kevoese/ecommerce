@@ -14,12 +14,12 @@ const links = [
   {
     title: 'Help Center',
     Icon: HelpCenterIcon,
-    info: 'help.thrivepay.com',
+    info: 'help.buyhere.com',
   },
   {
     title: 'Email Support',
     Icon: EmailSupportIcon,
-    info: 'online@thrivepay.com',
+    info: 'online@buyhere.com',
   },
   {
     title: 'Phone',
